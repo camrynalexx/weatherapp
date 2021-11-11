@@ -20,6 +20,24 @@ body {
   margin-top: 20px;
 }
 
+.btn {
+    border-radius: 5px;
+    background: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px 0;
+    border: none;
+    height: 50px;
+    color: #ffdff7;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: #FEB8EB;
+    color: #ffdff7;
+}
+
 h1 {
   color: #ffdff7;
   font-size: 38px;
