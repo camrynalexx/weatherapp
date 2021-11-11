@@ -16,38 +16,39 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <h1>San Francisco, CA</h1>
-        <ul>
-          <li>
+        <div class="weather-app-wrapper">
+      <div class="entireApp">
+        <div class="weatherInfo">
+            <div class="row">
+             <div class="col-6">
+          <h1>San Francisco</h1>
+          <ul>
+            <li>
               <span> Sunday 06:43, </span>
-               Clear Sky
-          </li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
-              alt="Sunny"
-            />
-            12°c | °F
-          </div>
-          <div class="col-6">
-              <ul>
-              <li>Humidity: 
-                <strong> 
-                  73% 
-                </strong>
-             </li>
-              <li>Wind: 
-              <strong>
-                km/h
-              </strong>
-              </li>
-            </ul>
+              <span class="conditons"></span>
+            </li>
+                <li>
+                  Humidity:
+                  <strong> 73% </strong>
+                  Wind:
+                  <strong> 0.43 km/h </strong>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6">
+                <div class= "temperature-container">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
+                alt="Sunny"
+              />
+                  <span id="temperature"></span>
+                  <span id="unit">°C | F</span>
+            </div>
           </div>
         </div>
-        <small>
+        </div>
+        </div>
+      <small>
           <a
             href="https://github.com/camrynalexx/weatherapp.git"
             target="_blank"
@@ -56,7 +57,7 @@
           >
           by Camryn Lee
         </small>
-      </div>
+        </div>
     </div>
     <script src="src/app.js"></script>
   </body>
