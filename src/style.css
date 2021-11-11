@@ -34,8 +34,13 @@ ul {
 
 li {
   list-style: none;
+  text-transform: capitalize;
   margin: 0;
   padding: 0;
+}
+
+.windUnit {
+    text-transform: lowercase;
 }
 
 .temperature-container {
