@@ -66,7 +66,29 @@ li {
     font-weight: 700;
     font-size: 60px;
 }
+
+#city-input {
+    background: #f9f7fe;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 6px;
+    color: #ffdff7;
+    font-size: 16px;
+    height: 50px;
+    line-height: 20px;
+}
+
+
 #unit {
     font-weight: 400;
     font-size: 28px;
+}
+
+.temperature-container .active {
+    color: rgb(33, 33, 33);
+    cursor: default;
+}
+
+.temperature-container .active:hover {
+    text-decoration: none;
 }
