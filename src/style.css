@@ -87,11 +87,21 @@ li {
 .temperature-container .active {
     color: rgb(33, 33, 33);
     cursor: default;
+    text-decoration: none;
+}
+
+#farenheit-link {
+  text-decoration: none;
 }
 
 .temperature-container .active:hover {
+  text-decoration: none;
+}
+
+#farenheit-link:hover {
     text-decoration: none;
 }
+
 
 .weather-forecast {
   margin-top: 20px;
