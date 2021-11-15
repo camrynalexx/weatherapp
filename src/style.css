@@ -2,6 +2,31 @@ body {
   font-family: cerebri-sans,Helvetica,Arial,sans-serif;
 }
 
+h1 {
+  margin: 20px 0 10px;
+  color: #ffdff7;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+
 .weather-app-wrapper {
   max-width: 800px;
   margin: 30px auto;
@@ -11,9 +36,17 @@ body {
   border: 1px solid #ff9ac7;
   background-color: #ff9ac7;
   color: #ffdff7;
-  border-radius: 5px;
+  border-radius: 16px;
   box-shadow: 9px 9px 5px #ff68ab;
   padding: 40px;
+}
+
+#search-form {
+  padding-bottom: 30px;
+}
+
+.page-line-one {
+  margin-top: 0;
 }
 
 .weatherInfo {
@@ -38,24 +71,7 @@ body {
     color: #ffdff7;
 }
 
-h1 {
-  color: #ffdff7;
-  font-size: 38px;
-  font-weight: 700;
-  line-height: 48px;
-}
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-  text-transform: capitalize;
-  margin: 0;
-  padding: 0;
-}
 
 .windUnit {
     text-transform: lowercase;
@@ -82,11 +98,14 @@ li {
 #unit {
     font-weight: 400;
     font-size: 28px;
+    position: relative;
+    line-height: 1;
+    top: -23px;
 }
 
 
 .weather-forecast {
-  margin-top: 20px;
+  margin: 40px 0;
   text-align: center;
 }
 
@@ -108,4 +127,14 @@ li {
   font-size: 18px;
   font-weight: 700px;
   opacity: 0.6;
+}
+
+.githubLink {
+  text-decoration: none;
+  color: #885DF1;
+}
+
+.netlifyLink {
+  text-decoration: none;
+  color: #885DF1;
 }

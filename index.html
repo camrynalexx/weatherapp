@@ -34,6 +34,7 @@
               </div>
             </div>
           </form>
+          <hr class="page-line-one" />
           <div class="weatherInfo">
             <div class="row">
               <div class="col-6">
@@ -54,26 +55,31 @@
               </div>
               <div class="col-6">
                 <div class="temperature-container">
-                  <img src="" alt="clear" id="icon" />
+                  <img src="" id="icon" />
                   <span id="temperature"></span>
-                  <span id="unit">
-                    °F
-                  </span>
+                  <span id="unit">°F</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="weather-forecast" id="forecast"></div>
-        </div>
-        <small>
-          <a
+          <hr   >
+        <footer>
+          This project was coded by Camryn Lee and is 
+          <a 
             href="https://github.com/camrynalexx/weatherapp.git"
-            target="_blank"
-          >
-            Open-source code,</a
-          >
-          by Camryn Lee
-        </small>
+            target=""
+            class="githubLink"
+          > open-sourced on Github
+        </a> 
+           and 
+          <a href="https://sharp-lumiere-bae265.netlify.app/"
+            target=""
+            class="netlifyLink"
+          > hosted on 
+            Netlify</a>
+        </footer>
+        </div>
       </div>
     </div>
     <script src="src/app.js"></script>
