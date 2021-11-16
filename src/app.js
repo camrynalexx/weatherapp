@@ -52,9 +52,11 @@ function displayForecast(response) {
   forecastHTML = 
     forecastHTML + 
    ` 
-              <div class="col">
-                <div class="weather-forecast-date">${formatDay (forecastDay.dt)}</div>
-                <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" alt="" width="36" />
+              <div class="card col-sm-2" id="forecast-card">
+               <div class="weather-forecast-date">${formatDay (forecastDay.dt)}</div>
+                <center>
+                <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" alt="" width="40" class="weatherIcon"/>
+                </center>
                <div class="weather-forecast-temperatures">
                  <span class="weather-forecast-temperature-max">
                    ${Math.round(forecastDay.temp.max)}°

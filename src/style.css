@@ -1,5 +1,7 @@
 body {
   font-family: cerebri-sans,Helvetica,Arial,sans-serif;
+  background: #FFCCCC;
+
 }
 
 h1 {
@@ -71,7 +73,13 @@ footer {
     color: #ffdff7;
 }
 
+#humidity {
+  color: #FF6699;
+}
 
+#wind {
+  color: #FF6699;
+}
 
 .windUnit {
     text-transform: lowercase;
@@ -88,7 +96,7 @@ footer {
     border: none;
     padding: 15px 20px;
     border-radius: 6px;
-    color: #C99FCE;
+    color: #ff9ac7;
     font-size: 16px;
     height: 50px;
     line-height: 20px;
@@ -100,7 +108,7 @@ footer {
     font-size: 28px;
     position: relative;
     line-height: 1;
-    top: -23px;
+    top: -22px;
 }
 
 
@@ -109,17 +117,30 @@ footer {
   text-align: center;
 }
 
+#forecast-card {
+  padding: 20px;
+  position: relative;
+  background-color:  #ffdd7e;
+  border-color: #ff9ac7;
+}
+
+#forecast-card:hover {
+  background-color: #f4c1e6;
+}
+
 .weather-forecast-date {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: rgba(39,33,66,.4);
+  color: #5c5470;
+
 }
 
 .weather-forecast-temperature-max {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.5;
+  color: #5c5470;
 }
 
 .weather-forecast-temperature-min {
@@ -127,14 +148,15 @@ footer {
   font-size: 18px;
   font-weight: 700px;
   opacity: 0.6;
+  color: #5c5470;
 }
 
 .githubLink {
   text-decoration: none;
-  color: #885DF1;
+  color: #FF6699;
 }
 
 .netlifyLink {
   text-decoration: none;
-  color: #885DF1;
+  color: #FF6699;
 }
