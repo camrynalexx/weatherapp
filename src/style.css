@@ -1,12 +1,12 @@
 body {
   font-family: cerebri-sans,Helvetica,Arial,sans-serif;
-  background: #FFCCCC;
+  background: #FAF0E6;
 
 }
 
 h1 {
   margin: 20px 0 10px;
-  color: #ffdff7;
+  color: #ffff;
   font-size: 38px;
   font-weight: 700;
   line-height: 48px;
@@ -22,6 +22,7 @@ li {
   text-transform: capitalize;
   margin: 0;
   padding: 0;
+  
 }
 
 footer {
@@ -35,11 +36,11 @@ footer {
   padding: 0 15px 0 15px;
 }
 .entireApp {
-  border: 1px solid #ff9ac7;
-  background-color: #ff9ac7;
-  color: #ffdff7;
+  border: 1px solid #FFCCCC;
+  background-color: #FFCCCC;
+  color: #ffff;
   border-radius: 16px;
-  box-shadow: 9px 9px 5px #ff68ab;
+  box-shadow: 9px 9px 5px #FB86BE;
   padding: 40px;
 }
 
@@ -63,14 +64,14 @@ footer {
     padding: 10px 0;
     border: none;
     height: 50px;
-    color: #ffdff7;
+    color: #fa86be;
     cursor: pointer;
     transition: 0.2s;
 }
 
 .btn:hover {
-    background-color: #FEB8EB;
-    color: #ffdff7;
+    background-color: #fa86be;
+    color: #ffff;
 }
 
 #humidity {
@@ -120,12 +121,12 @@ footer {
 #forecast-card {
   padding: 20px;
   position: relative;
-  background-color:  #ffdd7e;
-  border-color: #ff9ac7;
+  background-color:  #e4f1fe;
+  border-color: #FFCCCC;
 }
 
 #forecast-card:hover {
-  background-color: #f4c1e6;
+  background-color: #8dc6ff;
 }
 
 .weather-forecast-date {

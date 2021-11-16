@@ -19,9 +19,10 @@ function formatDate(timestamp) {
     "Friday", 
     "Saturday"
   ];
+
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
-}
+  }
 
 function formatDay(timestamp) {
 let date = new Date(timestamp * 1000);
@@ -53,7 +54,7 @@ function displayForecast(response) {
     forecastHTML + 
    ` 
               <div class="card col-sm-2" id="forecast-card">
-               <div class="weather-forecast-date">${formatDay (forecastDay.dt)}</div>
+               <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
                 <center>
                 <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" alt="" width="40" class="weatherIcon"/>
                 </center>
@@ -91,9 +92,7 @@ function displayTemperature(response) {
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon")
 
-  celsiusTemperature = response.data.main.temp;
-
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
@@ -103,11 +102,6 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
    getForecast(response.data.coord);
-
-
-
-
-  
 }
 
 function search(city) {
@@ -126,5 +120,4 @@ function handleSubmit(event) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit)
 
-search("San Francisco");
-
+search("New York");
